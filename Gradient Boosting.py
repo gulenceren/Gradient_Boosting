@@ -90,7 +90,7 @@ cm = confusion_matrix(y_test, y_pred)
 print("Confusion Matrix: ",cm)
 
 print("======================CatBoost==================== ")
-clf = XGBClassifier()
+clf = CatBoostClassifier()
 start = time.time()
 clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
